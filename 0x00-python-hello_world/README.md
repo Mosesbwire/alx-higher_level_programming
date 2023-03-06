@@ -4,7 +4,7 @@
 2. Use f-strings
 3. interger and float cannot be cast to string when printing
 ---
-**0-run:** A shell script that runs a python script stored in the environment variable PYFILE.
+**0-run:** A shell script that runs a python script stored in the environment variable PYFILE.\
 **1-run**\_**inline:** A shell script that runs a python code snippet stored as a string in the env variable PYCODE.
 **2-print.py:** Use the print function to print a string literal.
 **3-print**\_**number.py:** use f-string to print an integer followed by a string literal.
