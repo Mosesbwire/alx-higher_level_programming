@@ -9,7 +9,7 @@ if (number < 0):
 
 last_digit = new_num % 10
 
-print(f"The last digit of {number:d} is {last_digit:d} and is", end=" ")
+print(f"Last digit of {number:d} is {last_digit:d} and is", end=" ")
 if (last_digit > 5):
     print("greater than 5")
 elif (last_digit < 6 and last_digit != 0):
