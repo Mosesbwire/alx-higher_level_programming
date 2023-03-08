@@ -9,7 +9,7 @@
 
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *new_node, *current, *tracker;
+	listint_t *new_node, *current;
 
 	current = *head;
 	new_node = malloc(sizeof(listint_t));
@@ -22,31 +22,29 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = new_node;
 		return (new_node);
 	}
-	tracker = current->next->next;
+
 	if (current->n > current->next->n)
 	{
-		while (current->n > number)
+		while (current->next != NULL)
 		{
-			if (tracker->n < number)
+			if (current->n >= number && current->next->n <= number)
 			{
 				break;
 			}
 			current = current->next;
-			tracker = tracker->next;
 		}
 	} else
 	{
-		while (current->n < number)
+		while (current->next != NULL)
 		{
-			if (tracker->n > number)
+			if (current->n <= number && current->next->n >= number)
 			{
 				break;
 			}
 			current = current->next;
-			tracker = tracker->next;
 		}
 	}
-	new_node->next = tracker;
+	new_node->next = current->next;
 	current->next = new_node;
 	return (new_node);
 }
