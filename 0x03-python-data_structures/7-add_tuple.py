@@ -20,7 +20,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     else:
         b0, b1 = tuple_b
 
-    t = a0 + b0, a1 + b1
+    t = int(a0) + int(b0), int(a1) + int(b1)
 
     return t
 
