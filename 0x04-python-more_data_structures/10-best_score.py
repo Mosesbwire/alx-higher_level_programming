@@ -8,9 +8,9 @@ def best_score(a_dictionary):
         return
 
     for k, v in a_dictionary.items():
-        if (val > v):
-            key = k
+        if (val < v):
             val = v
+            key = k
         if (val == v):
             key = None
     return key
