@@ -1,18 +1,28 @@
 #!/usr/bin/python3
 
+def swap(initial_num, replace, search):
+
+    if (initial_num == search):
+        return replace
+    return initial_num
+
+
 def search_replace(my_list, search, replace):
-    new_list = []
 
     if (not isinstance(my_list, list) or len(my_list) == 0):
         return
 
-    for x, y in enumerate(my_list):
-        if (y != search):
-            new_list.append(y)
-        else:
-            new_list.append(replace)
-    return new_list
+    new_list = map(
+        swap,
+        my_list,
+        [replace] *
+        len(my_list),
+        [search] *
+        len(my_list))
+
+    return list(new_list)
 
 
 if __name__ == "__main__":
     search_replace([], 0, 0)
+    swap(0, 0)
