@@ -9,8 +9,10 @@ def swap(initial_num, replace, search):
 
 def search_replace(my_list, search, replace):
 
-    if (not isinstance(my_list, list) or len(my_list) == 0):
+    if (not isinstance(my_list, list)):
         return
+    if (len(my_list) == 0):
+        return my_list
 
     new_list = map(
         swap,
