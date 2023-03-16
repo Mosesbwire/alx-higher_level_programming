@@ -6,11 +6,13 @@ def best_score(a_dictionary):
 
     if (not isinstance(a_dictionary, dict)):
         return
+    if (len(list(a_dictionary)) == 0):
+        return
 
     for k, v in a_dictionary.items():
         if (val < v):
             val = v
             key = k
-        if (val == v):
+        elif (val == v):
             key = None
     return key
