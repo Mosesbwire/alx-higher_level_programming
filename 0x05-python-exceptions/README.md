@@ -15,8 +15,8 @@ Each file will demonstrate a concept on exceptions.
 
 All the files will be excecutable.
 
-0-safe\_print\_list.py(https:\\\\www.github.com)
-
+[0-safe\_print\_list.py](https:\\\\www.github.com)
+---
 The function prints a specified number of items from a list. The items in the list can be of any type(integer, string, e.t.c).
 
 The `x` parameter represents the number of items to be printed and it can be lager than the length of `my_list`.
