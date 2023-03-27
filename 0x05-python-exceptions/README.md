@@ -16,7 +16,7 @@ Each file will demonstrate a concept on exceptions.
 All the files will be excecutable.
 
 [0-safe\_print\_list.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
----
+
 The function prints a specified number of items from a list. The items in the list can be of any type(integer, string, e.t.c).
 
 The `x` parameter represents the number of items to be printed and it can be lager than the length of `my_list`.
@@ -28,7 +28,7 @@ No module can be imported
 The len function cannot be used.
 
 [1-safe\_print\_integer.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
----
+
 Prints an integer
 
 prototype: `def safe_print_integer(value):`
@@ -40,7 +40,7 @@ Don't import any module
 Don't use `type`
 
 [2-safe\_print\_list\_integers.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
----
+
 prints only integers from the given list
 
 non-integers are skipped silently
@@ -52,8 +52,6 @@ non-integers are skipped silently
 Function returns the number of integers printed
 
 [3-safe\_print\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_division.py)
----
-Does division
 
 Returns result of the division otherwise `None`
 
