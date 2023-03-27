@@ -15,7 +15,7 @@ Each file will demonstrate a concept on exceptions.
 
 All the files will be excecutable.
 
-[0-safe\_print\_list.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
+[0-safe\_print\_list](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
 
 The function prints a specified number of items from a list. The items in the list can be of any type(integer, string, e.t.c).
 
@@ -27,7 +27,7 @@ No module can be imported
 
 The len function cannot be used.
 
-[1-safe\_print\_integer.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
+[1-safe\_print\_integer](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
 
 Prints an integer
 
@@ -39,7 +39,7 @@ Don't import any module
 
 Don't use `type`
 
-[2-safe\_print\_list\_integers.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
+[2-safe\_print\_list\_integers](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
 
 prints only integers from the given list
 
@@ -51,7 +51,7 @@ non-integers are skipped silently
 
 Function returns the number of integers printed
 
-[3-safe\_print\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
+[3-safe\_print\_division](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
 
 Returns result of the division otherwise `None`
 
@@ -61,7 +61,7 @@ Exceptions should be well handled
 
 `finally` block will always print the results of the division
 
-[4-list\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py)
+[4-list\_division](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py)
 
  Divides element by element in 2 lists
 
@@ -71,10 +71,21 @@ Exceptions should be well handled
 
  Handle all exceptions - ZeroDivisionError , TypeError exceptions
 
-[5-raise\_exception.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
+[5-raise\_exception](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
 
 Function raise TypeError Exception
 
-[6-raise\_exception\_msg.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
+[6-raise\_exception\_msg](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
     Raises a `NameError` exception with a user defined message passed in
+
+[100-safe\_print\_integer\_err](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/100-safe_print_integer_err.py)
+
+Prints an integer
+
+Return `True` if value is integer otherwise return `False`
+
+Raises an exception if value is not an integer and prints the exception to stderr
+
+
+
 
