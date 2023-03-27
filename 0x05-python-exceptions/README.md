@@ -64,4 +64,6 @@ Exceptions should be well handled
 [5-raise\_exception.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
 
 Function raise TypeError Exception
+[6-raise\_exception\_msg.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
+    Raises a `NameError` exception with a user defined message passed in
 
