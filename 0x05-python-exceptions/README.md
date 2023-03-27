@@ -15,7 +15,7 @@ Each file will demonstrate a concept on exceptions.
 
 All the files will be excecutable.
 
-[0-safe\_print\_list.py](https:\\\\www.github.com)
+[0-safe\_print\_list.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
 ---
 The function prints a specified number of items from a list. The items in the list can be of any type(integer, string, e.t.c).
 
