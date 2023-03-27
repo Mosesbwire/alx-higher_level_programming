@@ -27,3 +27,14 @@ No module can be imported
 
 The len function cannot be used.
 
+[1-safe\_print\_integer.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
+---
+Prints an integer
+
+prototype: `def safe_print_integer(value):`
+
+Return `True` if value is an integer otherwise `False`
+
+Don't import any module
+Don't use `type`
+
