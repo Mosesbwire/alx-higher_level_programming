@@ -86,6 +86,12 @@ Return `True` if value is integer otherwise return `False`
 
 Raises an exception if value is not an integer and prints the exception to stderr
 
+[101-safe\_function](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/101-safe_function.py)
 
+Takes in a pointer to a function, acting like a wrapper around the function. Handles exceptions that might be thrown by the function
+
+Return results of the function, otherwise return `None`
+
+Prints the exception to stderr
 
 
