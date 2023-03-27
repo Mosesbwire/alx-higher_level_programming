@@ -9,8 +9,8 @@ def safe_print_list(my_list=[], x=0):
             elements_printed += 1
 
     except IndexError:
-        print("")
+        break
     except TypeError:
-        print("")
-    print("")
+        break
+    print()
     return elements_printed
