@@ -51,7 +51,7 @@ non-integers are skipped silently
 
 Function returns the number of integers printed
 
-[3-safe\_print\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_division.py)
+[3-safe\_print\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
 
 Returns result of the division otherwise `None`
 
@@ -60,10 +60,20 @@ Assumption is made that the arguments given are always integers
 Exceptions should be well handled
 
 `finally` block will always print the results of the division
+[4-list\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py)
+
+ Divides element by element in 2 lists
+
+ The list can contain any data type
+
+ Returns a new list that is same length as the two lists. Elements are result of the element by element division from the list arguments
+
+ Handle all exceptions - ZeroDivisionError , TypeError exceptions
 
 [5-raise\_exception.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
 
 Function raise TypeError Exception
+
 [6-raise\_exception\_msg.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
     Raises a `NameError` exception with a user defined message passed in
 
