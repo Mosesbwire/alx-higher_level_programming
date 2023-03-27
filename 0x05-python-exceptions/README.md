@@ -51,3 +51,14 @@ non-integers are skipped silently
 
 Function returns the number of integers printed
 
+[3-safe\_print\_division.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_division.py)
+---
+Does division
+
+Returns result of the division otherwise None
+
+Assumption is made that the arguments given are always integers
+
+Exceptions should be well handled
+
+finally block will always print the results of the division
