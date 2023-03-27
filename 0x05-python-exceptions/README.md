@@ -36,5 +36,18 @@ prototype: `def safe_print_integer(value):`
 Return `True` if value is an integer otherwise `False`
 
 Don't import any module
+
 Don't use `type`
+
+[2-safe\_print\_list\_integers.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
+---
+prints only integers from the given list
+
+non-integers are skipped silently
+
+`x` represents the number of items to print from the list
+
+`x` can be lager than the length of the list. This should throw an exception
+
+Function returns the number of integers printed
 
