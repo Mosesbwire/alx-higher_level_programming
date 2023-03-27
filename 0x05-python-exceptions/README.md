@@ -55,10 +55,15 @@ Function returns the number of integers printed
 ---
 Does division
 
-Returns result of the division otherwise None
+Returns result of the division otherwise `None`
 
 Assumption is made that the arguments given are always integers
 
 Exceptions should be well handled
 
-finally block will always print the results of the division
+`finally` block will always print the results of the division
+
+[5-raise\_exception.py](https://github.com/Mosesbwire/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
+
+Function raise TypeError Exception
+
