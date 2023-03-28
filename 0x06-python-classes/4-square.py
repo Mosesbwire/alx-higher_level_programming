@@ -14,12 +14,8 @@ class Square:
         Args:
             size (int): length of the square
         """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.__size = size
+
 
     def area(self):
         """calculates area of a square.
@@ -29,9 +25,20 @@ class Square:
 
     @property
     def size(self):
-        """ sets and gets the private instance variale size"""
+        """ getter returns the private instance variale size
+            setter checks if value is an integer
+            setter throws TypeError if value is not int
+            setter throws ValueError if value is < 0
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        self.__size = value
+
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
+
