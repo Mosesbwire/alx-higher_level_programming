@@ -4,6 +4,7 @@ Module 2-square
 Defines a square
 """
 
+
 class Square:
     """ Represents a square """
 
@@ -13,14 +14,9 @@ class Square:
         Args:
             size (int): length of the square
         """
-        try:
-            if not isinstance(size, int):
-                raise TypeError
-            if size < 0:
-                raise ValueError
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
         else:
             self.__size = size
