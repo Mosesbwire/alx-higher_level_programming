@@ -16,8 +16,13 @@ def list_division(my_list_1, my_list_2, list_length):
             except TypeError:
                 print("wrong type")
                 div_list.append(0)
-            except IndexError:
+    except IndexError:
+        if (len(my_list_1) == 0 or len(my_list_2) == 0):
+            for i in range(list_length):
                 print("out of range")
                 div_list.append(0)
+        else:
+            print("out of range")
+            div_list.append(0)
     finally:
         return div_list
