@@ -65,18 +65,17 @@ class SinglyLinkedList:
         if self.__head is None:
             self.__head = new_node
             return
+
         current_node = self.__head
+        if new_node.data < current_node.data:
+            new_node.next_node = current_node
+            self.__head = new_node
+            return
 
         try:
-            while current_node is not None:
-                if current_node.data <= value:
-                    new_node.next_node = current_node
-                elif value > current_node.data and current_node.next_node is not None and current_node.next_node.data >= value:
-                    new_node.next_node = current_node.next_node
-                    current_node.next_node = new_node
-                else:
-                    current_node.next_node = new_node
-
+            while (current_node.next_node is not None) and (new_node.data > current_node.next_node.data):
                 current_node = current_node.next_node
+                new_node.next_node = current_node.next_node
+                current_node.next_node = new_node
         except TypeError:
             raise
