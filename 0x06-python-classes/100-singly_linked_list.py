@@ -51,6 +51,18 @@ class SinglyLinkedList:
     def __init__(self):
         """initializes the object"""
         self.__head = None
+    def __str__(self):
+        """
+        String representation of singly linked list needed to print
+        """
+        string = ""
+        tmp = self.__head
+        while tmp is not None:
+            string += str(tmp.data)
+            tmp = tmp.next_node
+            if tmp is not None:
+                string += "\n"
+        return string
 
     def sorted_insert(self, value):
         """inserts the a node in the list
