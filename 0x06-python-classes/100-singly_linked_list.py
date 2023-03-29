@@ -58,7 +58,7 @@ class SinglyLinkedList:
         """
         new_node = Node(value)
         try:
-            new_node.data(value)
+            new_node.data = value
         except TypeError:
             raise
 
@@ -70,12 +70,12 @@ class SinglyLinkedList:
         try:
             while current_node is not None:
                 if current_node.data <= value:
-                    new_node.next_node(current_node)
+                    new_node.next_node = current_node
                 elif value > current_node.data and current_node.next_node is not None and current_node.next_node.data >= value:
-                    new_node.next_node(current_node.next_node)
-                    current_node.next_node(new_node)
+                    new_node.next_node = current_node.next_node
+                    current_node.next_node = new_node
                 else:
-                    current_node.next_node(new_node)
+                    current_node.next_node = new_node
 
                 current_node = current_node.next_node
         except TypeError:
