@@ -5,7 +5,7 @@ Module 100-singly_linked_list can be used to create a singly linked list
 
 
 class Node:
-    """Represents node of a linked list. Holds the data of the list"""
+    """Represents node of a linked list. Holds the data of the list and link to next node"""
 
     def __init__(self, data, next_node=None):
         """ initializes the object
@@ -16,33 +16,33 @@ class Node:
         self.__data = data
         self.__next_node = next_node
 
-        @property
-        def data(self):
-            """returns the data variable
-            setter throws TypeError exception if argument is not int
-            """
-            return self.__data
+    @property
+    def data(self):
+        """returns the data variable
+        setter throws TypeError exception if argument is not int
+        """
+        return self.__data
 
-        @data.setter
-        def data(self, value):
-            if type(value) is not int:
-                raise TypeError("data must be an integer")
-            else:
-                self.__data = value
+    @data.setter
+    def data(self, value):
+        if type(value) is not int:
+            raise TypeError("data must be an integer")
+        else:
+            self.__data = value
 
-        @property
-        def next_node(self):
-            """returns the next_node
-            setter throws TypeError if value is not a Node
-            """
-            return self.__next_node
+    @property
+    def next_node(self):
+        """returns the next_node
+        setter throws TypeError if value is not a Node
+        """
+        return self.__next_node
 
-        @next_node.setter
-        def next_node(self, value):
-            if type(value) is not Node:
-                raise TypeError("next_node must be a node object")
-            else:
-                self.__next_node = value
+    @next_node.setter
+    def next_node(self, value):
+        if type(value) is not Node:
+            raise TypeError("next_node must be a node object")
+        else:
+            self.__next_node = value
 
 
 class SinglyLinkedList:
