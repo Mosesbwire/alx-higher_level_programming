@@ -82,5 +82,5 @@ class Rectangle:
         for x in range(self.height):
             for y in range(self.width):
                 new_str = new_str + "#"
-            new_str = new_str + '\n'
+            new_str = new_str + '\n\n'
         return new_str.rstrip()
