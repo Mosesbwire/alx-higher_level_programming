@@ -1,0 +1,64 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[1,2,3], [4,5,6]]
+
+>>> mixed_matrix = [[2,3,4.5], ['a', (200, 400), {'a': "first", 'b': "second"}]]
+
+>>> mixed_list = [{"name": "name"}, "name", [1,4,5]]
+
+>>> uneven_matrix = [[1,2,3], [4,5,6], [7,8,9,0]]
+
+>>> empty_list = [[1,2,3], [4,5,6], [], [7,8,9]]
+
+>>> matrix_divided(matrix, "a")
+Traceback (most recent call last):
+TypeError: div must be a number
+
+>>> matrix_divided("name", 1)
+Traceback (most recent call last):
+TypeError: matrix must be a list
+
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+>>> matrix_divided([], 2)
+[]
+
+>>> matrix_divided(uneven_matrix, 4)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix_divided(empty_list, 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(mixed_matrix, 2.0)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(mixed_list, 3.5)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> isinstance(matrix_divided(matrix, 2), list)
+True
+
+>>> len(matrix_divided(matrix, 2)) == len(matrix)
+True
+
+>>> result = matrix_divided(matrix,2)
+
+>>> length = len(result)
+
+>>> type(result[0]) is list and type(result[length - 1]) is list
+True
+
+>>> result[0][0]
+0.5
+
+>>> result[1][2]
+3.0
+
+>>> result[0][2]
+1.5
