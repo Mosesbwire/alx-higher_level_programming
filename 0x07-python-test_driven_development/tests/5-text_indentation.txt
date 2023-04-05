@@ -1,0 +1,49 @@
+import function to test
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> my_str = "string with no punctuation marks"
+
+>>> text_indentation(my_str)
+string with no punctuation marks
+
+>>> my_str = "This string.Has all the characters?The list is:period, question mark and colon"
+
+>>> text_indentation(my_str)
+This string
+<BLANKLINE>
+Has all the characters
+<BLANKLINE>
+The list is
+<BLANKLINE>
+period, question mark and colon
+
+>>> text_indentation(".?:")
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+
+>>> text_indentation(".")
+<BLANKLINE>
+<BLANKLINE>
+
+>>> text_indentation("?")
+<BLANKLINE>
+<BLANKLINE>
+
+>>> text_indentation(":")
+<BLANKLINE>
+<BLANKLINE>
+
+>>> text_indentation("follow each other.?")
+follow each other
+<BLANKLINE>
+<BLANKLINE> 
+<BLANKLINE> 
