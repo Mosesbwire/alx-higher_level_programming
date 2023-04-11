@@ -6,7 +6,7 @@ Extends the list class
 
 
 class MyList(list):
-    """ extends the list class 
+    """ extends the list class
 
     """
 
