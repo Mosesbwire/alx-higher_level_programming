@@ -17,7 +17,3 @@ def lookup(obj):
     attributes_list = list(object.__dict__.keys()) + list(obj.__dict__.keys())
     sorted_list = sorted(attributes_list)
     return sorted_list
-
-
-if __name__ == "__main__":
-    print(lookup(int))
