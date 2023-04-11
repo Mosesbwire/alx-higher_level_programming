@@ -8,4 +8,5 @@ Has an empty class
 
 
 class BaseGeometry():
+    """Empty base class """
     pass
