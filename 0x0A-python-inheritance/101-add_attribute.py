@@ -14,6 +14,7 @@ def add_attribute(obj, key, value):
         key (str): name of the attribute
         value (obj): value for the attribute
     """
-    if (type(obj) in (int, float, complex, str, tuple, frozenset, slot)):
+    if (type(obj) in (int, float, complex, str, tuple, frozenset)
+            or hasattr(obj,"__slots__")):
         raise TypeError("can\'t add new attribute")
     setattr(obj, key, value)
