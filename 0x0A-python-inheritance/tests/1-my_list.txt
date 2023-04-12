@@ -34,3 +34,20 @@ True
 >>> list2.print_sorted()
 []
 
+>>> list3 = MyList()
+
+>>> list3.append(-100)
+
+>>> list3.append(-300)
+
+>>> list3.append(-1)
+
+>>> list3.append(-4)
+
+>>> list3.append(-1000)
+
+>>> list3.append(-5)
+
+>>> list3.print_sorted()
+[-1000, -300, -100, -5, -4, -1]
+
