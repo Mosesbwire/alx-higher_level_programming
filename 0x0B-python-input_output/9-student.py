@@ -41,4 +41,4 @@ class Student:
         class_dict = self.__dict__
         new_dict = {key: value for key, value in class_dict.items()
                     if type(value) in (int, list, dict, bool, str)}
-        return new_dict
+        return self.__dict__
