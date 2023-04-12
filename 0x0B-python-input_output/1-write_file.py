@@ -6,6 +6,13 @@ Module 1-write_file
 
 
 def write_file(filename="", text=""):
+    """ writes data to a file
+        Args:
+            filename (str): name of file
+            text (data): data to write to file
+        Returns: number of characters written to file
+    """
+
     data = str(text)
     num_of_chars = 0
 
