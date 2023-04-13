@@ -12,6 +12,8 @@ class_to_json = __import__('8-class_to_json').class_to_json
 Student = __import__('9-student').Student
 Student = __import__('10-student').Student
 pascal_triangle = __import__('12-pascal_triangle').pascal_triangle
+append_after = __import__('100-append_after').append_after
+
 
 
 """task 0"""
@@ -196,3 +198,7 @@ def print_triangle(triangle):
 
 
 print_triangle(pascal_triangle(6))
+
+""" task 13 -Advanced task """
+print("----- task 13 Advanced 100----------")
+append_after("append_after_100.txt", "Python", "\"C is fun!\"\n")
