@@ -125,3 +125,10 @@ class Rectangle(Base):
             self.y = args[4]
         except IndexError:
             return
+
+    def to_dictionary(self):
+        """ returns a dictionary of the objects attributes """
+        attr_dict = {'id': self.id, 'width': self.width,
+                     'height': self.height, 'x': self.x, 'y': self.y}
+
+        return attr_dict

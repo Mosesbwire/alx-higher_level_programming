@@ -1,26 +1,21 @@
 #!/usr/bin/python3
 """
-Tests the rectangle class
+Test module for the Rectangle class
 
 """
 import unittest
 import io
 import sys
-from models.base import Base
 from models.rectangle import Rectangle
+from models.base import Base
 
 
 class TestRectangle(unittest.TestCase):
-    """ Tests for the rectangle class """
+    """
+    Test class for the Rectangle
+    """
 
-    def tearDown(self):
-        """ cleans up after each test.
-        Sets __nb_objects to 0
-        """
-        Base._Base__nb_objects = 0
-
-    @classmethod
-    def tearDownClass(cls):
+    def setUp(self):
         Base._Base__nb_objects = 0
 
     def test_is_subclass_base(self):
@@ -296,3 +291,13 @@ class TestRectangle(unittest.TestCase):
         actual_msg = "val is not an instance variable"
         expected_msg = str(e.exception)
         self.assertEqual(actual_msg, expected_msg)
+
+    def test_to_dictionary(self):
+        """ test to_dictionary function in rectangle class """
+        self.rect = Rectangle(20, 10, 5, 5, 1000)
+
+        rect_dict = self.rect.to_dictionary()
+        my_dict = {'id': 1000, 'width': 20, 'height': 10, 'x': 5, 'y': 5}
+
+        self.assertEqual(rect_dict, my_dict)
+        self.assertIs(type(rect_dict), dict)
