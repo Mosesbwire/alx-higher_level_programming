@@ -1,0 +1,3 @@
+-- gets best scores according to the given conditional
+
+SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
