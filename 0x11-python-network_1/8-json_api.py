@@ -15,12 +15,13 @@ def sendrequest(param=""):
     payload['q'] = param
 
     resp = requests.post(url, data=payload)
+
     try:
         data = resp.json()
-        if data:
-            print("[{}] {}".format(data.id, data.name))
-        else:
+        if not data:
             print("No result")
+        else:
+            print("[{}] {}".format(data.id, data.name))
     except JSONDecodeError:
         print("Not a valid json")
 
