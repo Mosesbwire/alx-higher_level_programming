@@ -16,7 +16,7 @@ def sendrequest(param=""):
 
     resp = requests.post(url, data=payload)
     try:
-        data = r.json()
+        data = resp.json()
         if data:
             print("[{}] {}".format(data.id, data.name))
         else:
