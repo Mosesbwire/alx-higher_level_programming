@@ -22,7 +22,7 @@ def sendrequest(param=""):
             print("No result")
         else:
             print("[{}] {}".format(data.id, data.name))
-    except JSONDecodeError:
+    except Exception:
         print("Not a valid json")
 
 
