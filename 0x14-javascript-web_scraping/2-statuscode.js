@@ -17,7 +17,7 @@ function get () {
       console.log(err);
       return;
     }
-    console.log('code: ', res && res.statusCode);
+    console.log('code:', res && res.statusCode);
   });
 }
 
